@@ -1,0 +1,38 @@
+site_name: Numerical Methods Docs
+site_url: https://angelobattaglia.github.io/NumericalMethodsDocs
+theme:
+  # name of the extension material for mkdocs
+  name: material
+  # Setting up the logo and the favicon
+  # favicon: images/favicon.ico
+  # logo: images/sys.png
+  # features, more on these if you visit the "Contribute" page
+  features:
+    - content.code.copy
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.sections
+    - navigation.path
+  palette:
+    primary: deep purple
+
+nav:
+  - Home: index.md
+  - Matrices:
+      - Building Matrices: Matrices/BuildingMatrices.md
+      - Gauss Seidel: Matrices/Gauss_Seidel.md
+      - Jacobi: Matrices/Jacobi.md
+      - Gradient Descent: Matrices/Gradient.md
+  - Approximation:
+      - Interpolation: Approximation/Interpolation.md
+      - Splines: Approximation/Splines.md
+  - Nonlinear Equation:
+      - Newton: Non_Linear_Equations/Newton.md
+      - Fixed Point: Non_Linear_Equations/Fixed_Point.md
+  - Integrals:
+      - Integrals in MATLAB: Integrals/IntegralsGeneral.md
+  - Ordinary Differential Equations:
+      - Euler's Methods: ODEs/Euler.md
+      - Trapezoid: ODEs/Trapezoid.md
+      - Runge Kutta: ODEs/RungeKutta.md
