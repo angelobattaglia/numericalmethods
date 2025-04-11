@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://angelobattaglia.github.io/NumericalMethodsDocs/Matrices/BuildingMatrices/">
+        <link rel="canonical" href="https://angelobattaglia.github.io/NumericalMethodsDocs/Matrices/Gradient/">
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../Jacobi/">
       
       
-        <link rel="next" href="../Gauss_Seidel/">
+        <link rel="next" href="../../Approximation/Interpolation/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Building Matrices - Numerical Methods Docs</title>
+        <title>Gradient Descent - Numerical Methods Docs</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#building-mats" class="md-skip">
+        <a href="#gradient-descent" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Building Matrices
+              Gradient Descent
             
           </span>
         </div>
@@ -192,7 +192,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../BuildingMatrices/" class="md-tabs__link">
           
   
     
@@ -405,31 +405,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Building Matrices
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../BuildingMatrices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -439,62 +418,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#basic-vectors" class="md-nav__link">
-    <span class="md-ellipsis">
-      Basic Vectors
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#putting-vectors-into-matrices-diagonally" class="md-nav__link">
-    <span class="md-ellipsis">
-      Putting vectors into matrices, diagonally
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#algorithm-for-the-anti-diagonal" class="md-nav__link">
-    <span class="md-ellipsis">
-      Algorithm for the Anti-Diagonal
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#composing-matrices" class="md-nav__link">
-    <span class="md-ellipsis">
-      Composing Matrices
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -548,10 +471,31 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../Gradient/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Gradient Descent
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -561,6 +505,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#steepest-descent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steepest Descent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conjugate-gradient-without-preconditioning-implemented-natively-in-matlab" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conjugate gradient without preconditioning, implemented natively in MATLAB
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#note-why-use-a-ones-vector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Note: Why Use a Ones Vector?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -992,36 +983,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#basic-vectors" class="md-nav__link">
+  <a href="#steepest-descent" class="md-nav__link">
     <span class="md-ellipsis">
-      Basic Vectors
+      Steepest Descent
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#putting-vectors-into-matrices-diagonally" class="md-nav__link">
+  <a href="#conjugate-gradient-without-preconditioning-implemented-natively-in-matlab" class="md-nav__link">
     <span class="md-ellipsis">
-      Putting vectors into matrices, diagonally
+      Conjugate gradient without preconditioning, implemented natively in MATLAB
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#algorithm-for-the-anti-diagonal" class="md-nav__link">
+  <a href="#note-why-use-a-ones-vector" class="md-nav__link">
     <span class="md-ellipsis">
-      Algorithm for the Anti-Diagonal
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#composing-matrices" class="md-nav__link">
-    <span class="md-ellipsis">
-      Composing Matrices
+      Note: Why Use a Ones Vector?
     </span>
   </a>
   
@@ -1043,102 +1025,57 @@
 
 
 
-<h1 id="building-mats">Building Mats</h1>
-<h2 id="basic-vectors">Basic Vectors</h2>
-<p>Column vector of 4s</p>
-<pre><code class="language-matlab">d = 4*ones(4, 1)
+<h1 id="gradient-descent">Gradient Descent</h1>
+<h2 id="steepest-descent">Steepest Descent</h2>
+<p>When implementing a gradient-based method (or performing any linear algebra computations related to a system like 𝐴𝑥 = 𝑏) you want to use matrix multiplication (using <code>*</code>) rather than elementwise multiplication (<code>.*</code>).</p>
+<pre><code class="language-matlab">B = magic(n);
+A = B'*B;
+b = sum(A,2);
 </code></pre>
-<pre><code class="language-shell">d =
-
-   4
-   4
-   4
-   4
+<p>The initial vector <code>x</code> and the initial residual vector <code>r</code></p>
+<pre><code class="language-matlab">x = (1:5)';
+r = b-A*x;
 </code></pre>
-<p>We can transpose it, turning it into a row vector</p>
-<pre><code class="language-matlab">d = 4*ones(4, 1)'
-</code></pre>
-<pre><code class="language-shell">d =
-
-   4   4   4   4
-</code></pre>
-<h2 id="putting-vectors-into-matrices-diagonally">Putting vectors into matrices, diagonally</h2>
-<p>This is how you put a vector in the diagonal of a matrix</p>
-<pre><code class="language-matlab">diag(ones(1,4), 0)
-</code></pre>
-<p>so that..</p>
-<pre><code class="language-shell">ans =
-
-Diagonal Matrix
-
-   1   0   0   0
-   0   1   0   0
-   0   0   1   0
-   0   0   0   1
-</code></pre>
-<p>Putting the vector in the superdiagonal directly above the elements comprising the diagonal  </p>
-<pre><code class="language-matlab">diag(ones(1,4),1)
-</code></pre>
-<pre><code class="language-shell">ans =
-
-   0   1   0   0   0
-   0   0   1   0   0
-   0   0   0   1   0
-   0   0   0   0   1
-   0   0   0   0   0
-</code></pre>
-<p>and Subdiagonal, i.e. directly below ..</p>
-<pre><code class="language-matlab">diag(ones(1,4),-1)
-</code></pre>
-<pre><code class="language-shell">ans =
-
-   0   0   0   0   0
-   1   0   0   0   0
-   0   1   0   0   0
-   0   0   1   0   0
-   0   0   0   1   0
-</code></pre>
-<p>Now, building a typical matrix:</p>
-<pre><code class="language-matlab">A = -2*eye(5) + diag(ones(1,4),1) + diag(ones(1,4),-1);
-</code></pre>
-<pre><code class="language-shell">A =
-
-  -2   1   0   0   0
-   1  -2   1   0   0
-   0   1  -2   1   0
-   0   0   1  -2   1
-   0   0   0   1  -2
-</code></pre>
-<p><code>eye(n)</code> creates an Identity matrix of order <code>n</code></p>
-<h2 id="algorithm-for-the-anti-diagonal">Algorithm for the Anti-Diagonal</h2>
-<p>To build an anti-diagonal matrix</p>
-<pre><code class="language-matlab">% The anti-diagonal matrix
-
-n = 4;
-C = eye(n);
-tmp = zeros(n, 1);
-
-for i = 1:n/2
-    tmp = C(:, i);
-    C(:, i) = C(:, n-i+1);
-    C(:, n-i+1) = tmp;
+<p>The gradient descent method</p>
+<pre><code class="language-matlab">for m = 1:30
+    a = (r'*r)/(r'*A*r);
+    x = x+a*r;
+    r = b-A*x;
 end
-
-% to show it ..
-C
 </code></pre>
-<pre><code class="language-shell">C =
-
-   0   0   0   1
-   0   0   1   0
-   0   1   0   0
-   1   0   0   0
+<p>Say you want to compute the absolute error in <code>norm-2</code>, since we stated
+that the solution is the ones vector</p>
+<pre><code class="language-matlab">err = norm(ones(n,1)-x)
 </code></pre>
-<h2 id="composing-matrices">Composing Matrices</h2>
-<p>This combines the matrices into a bigger one</p>
-<pre><code class="language-matlab">A = [B, C; C, D]
+<h2 id="conjugate-gradient-without-preconditioning-implemented-natively-in-matlab">Conjugate gradient without preconditioning, implemented natively in MATLAB</h2>
+<pre><code class="language-matlab">% Setting up the computation
+clear all
+close all
+format short e
 </code></pre>
-<p>of course, try to avoid dimensions mismatch</p>
+<pre><code class="language-matlab">% Setting up the matrices
+n = 2000;
+A = 5* eye(n) + diag(2*ones(n-5,1), 5) + diag(2*ones(n-5,1),-5);
+b = ones(n,1);
+</code></pre>
+<p>MATLAB’s pcg function stands for <code>Preconditioned Conjugate Gradient</code>.</p>
+<pre><code class="language-matlab">[x,FLAG,RELRES,ITER] = pcg(A,b)
+</code></pre>
+<p>Let's go over the details of the output <code>[x, FLAG, RELRES, ITER]</code>:
+- <code>x</code>: is the solution of <code>Ax=b</code>.
+- <code>FLAG</code>: A convergence flag. A flag of 0 typically indicates that the algorithm has converged successfully.
+- <code>RELRES</code>: The relative residual, which provides a measure of the accuracy of the computed solution.
+- <code>ITER</code>: The number of iterations the algorithm took to converge.</p>
+<h2 id="note-why-use-a-ones-vector">Note: Why Use a Ones Vector?</h2>
+<p><strong>Simplicity and Clarity</strong>
+- By choosing a vector of ones, the system is set up in a simple, easily understandable way. This makes it straightforward to analyze the behavior of the algorithm without the complications that might arise from a more complex or random right-hand side.</p>
+<p><strong>Benchmarking the Algorithm</strong>
+- When testing or demonstrating the conjugate gradient method, using a uniform vector like this allows you to see how the algorithm converges on a known and controlled problem. It helps in evaluating the performance and accuracy of the method.</p>
+<p><strong>Consistency</strong>
+- In many numerical experiments, especially in educational settings or initial testing, a ones vector is commonly used. This is because it provides a consistent and repeatable scenario for comparing the iterative solution with theoretical expectations.</p>
+<p><strong>Numerical Stability</strong>
+- A right-hand side with all ones avoids introducing additional scale issues or numerical instabilities that might occur with more varied entries. This ensures that any observed behavior in the convergence of the algorithm is more likely due to the properties of 𝐴.
+A and the method itself, rather than an artifact of the vector 𝑏.</p>
 
 
 

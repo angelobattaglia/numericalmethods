@@ -8,11 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://angelobattaglia.github.io/NumericalMethodsDocs/Ordinary_Differential_Equations/RungeKutta/">
+        <link rel="canonical" href="https://angelobattaglia.github.io/NumericalMethodsDocs/Non_Linear_Equations/Fixed_Point/">
       
       
-        <link rel="prev" href="../Trapezoid/">
+        <link rel="prev" href="../Newton/">
       
+      
+        <link rel="next" href="../../Integrals/IntegralsGeneral/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +22,7 @@
     
     
       
-        <title>Runge Kutta - Numerical Methods Docs</title>
+        <title>Fixed Point - Numerical Methods Docs</title>
       
     
     
@@ -70,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#runge-kutta" class="md-skip">
+        <a href="#fixed-point-iteration" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Runge Kutta
+              Fixed Point
             
           </span>
         </div>
@@ -224,11 +226,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../Non_Linear_Equations/Newton/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Newton/" class="md-tabs__link">
           
   
     
@@ -248,7 +252,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Non_Linear_Equations/IntegralsGeneral.md" class="md-tabs__link">
+        <a href="../../Integrals/IntegralsGeneral/" class="md-tabs__link">
           
   
     
@@ -264,18 +268,16 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../Euler/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../ODEs/Euler/" class="md-tabs__link">
           
   
     
   
-  ODEs
+  Ordinary Differential Equations
 
         </a>
       </li>
@@ -354,6 +356,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
       
@@ -399,7 +407,73 @@
         
   
   <span class="md-ellipsis">
-    Introduction
+    Building Matrices
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Matrices/Gauss_Seidel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gauss Seidel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Matrices/Jacobi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jacobi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Matrices/Gradient/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gradient Descent
     
   </span>
   
@@ -519,8 +593,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -531,19 +607,22 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -555,7 +634,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Nonlinear Equation
@@ -569,7 +648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Non_Linear_Equations/Newton/" class="md-nav__link">
+      <a href="../Newton/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -588,19 +667,29 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Non_Linear_Equations/Newton/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Newton
+    Fixed Point
     
   </span>
   
 
       </a>
+      
     </li>
   
 
@@ -665,7 +754,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Non_Linear_Equations/IntegralsGeneral.md" class="md-nav__link">
+      <a href="../../Integrals/IntegralsGeneral/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -691,10 +780,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -707,26 +794,23 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    ODEs
+    Ordinary Differential Equations
     
   </span>
   
@@ -734,10 +818,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            ODEs
+            Ordinary Differential Equations
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -748,7 +832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Euler/" class="md-nav__link">
+      <a href="../../ODEs/Euler/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -770,7 +854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Trapezoid/" class="md-nav__link">
+      <a href="../../ODEs/Trapezoid/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -789,19 +873,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../ODEs/RungeKutta/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -811,7 +886,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -858,7 +932,7 @@
 
 
 
-<h1 id="runge-kutta">Runge Kutta</h1>
+<h1 id="fixed-point-iteration">Fixed Point Iteration</h1>
 
 
 

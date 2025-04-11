@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://angelobattaglia.github.io/NumericalMethodsDocs/Ordinary_Differential_Equations/Euler/">
+        <link rel="canonical" href="https://angelobattaglia.github.io/NumericalMethodsDocs/Matrices/Gauss_Seidel/">
       
       
-        <link rel="prev" href="../../Non_Linear_Equations/Newton/">
+        <link rel="prev" href="../BuildingMatrices/">
       
       
-        <link rel="next" href="../Trapezoid/">
+        <link rel="next" href="../Jacobi/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Euler's Methods - Numerical Methods Docs</title>
+        <title>Gauss Seidel - Numerical Methods Docs</title>
       
     
     
@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#gauss-seidel" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -103,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Euler's Methods
+              Gauss Seidel
             
           </span>
         </div>
@@ -181,11 +186,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../Matrices/BuildingMatrices/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../BuildingMatrices/" class="md-tabs__link">
           
   
     
@@ -245,7 +252,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Non_Linear_Equations/IntegralsGeneral.md" class="md-tabs__link">
+        <a href="../../Integrals/IntegralsGeneral/" class="md-tabs__link">
           
   
     
@@ -261,18 +268,16 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../ODEs/Euler/" class="md-tabs__link">
           
   
     
   
-  ODEs
+  Ordinary Differential Equations
 
         </a>
       </li>
@@ -344,29 +349,40 @@
       
   
   
+    
   
   
+  
     
     
+      
+        
+      
+        
+      
+        
       
         
       
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -378,7 +394,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Matrices
@@ -392,11 +408,127 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Matrices/BuildingMatrices/" class="md-nav__link">
+      <a href="../BuildingMatrices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Introduction
+    Building Matrices
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Gauss Seidel
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Gauss Seidel
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gauss-seidel-with-residual-vector-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gauss-Seidel with residual vector check
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Jacobi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jacobi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Gradient/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gradient Descent
     
   </span>
   
@@ -588,11 +720,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Non_Linear_Equations/Newton/" class="md-nav__link">
+      <a href="../../Non_Linear_Equations/Fixed_Point/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Newton
+    Fixed Point
     
   </span>
   
@@ -662,7 +794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Non_Linear_Equations/IntegralsGeneral.md" class="md-nav__link">
+      <a href="../../Integrals/IntegralsGeneral/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -688,10 +820,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -704,26 +834,23 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    ODEs
+    Ordinary Differential Equations
     
   </span>
   
@@ -731,10 +858,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            ODEs
+            Ordinary Differential Equations
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -742,17 +869,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../ODEs/Euler/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -762,7 +882,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -775,7 +894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Trapezoid/" class="md-nav__link">
+      <a href="../../ODEs/Trapezoid/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -797,7 +916,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../RungeKutta/" class="md-nav__link">
+      <a href="../../ODEs/RungeKutta/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -836,6 +955,25 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gauss-seidel-with-residual-vector-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gauss-Seidel with residual vector check
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -851,9 +989,56 @@
 
 
 
-  <h1>Euler's Methods</h1>
+<h1 id="gauss-seidel">Gauss Seidel</h1>
+<p>With Gauss-Seidel the matrix A gets transformed with <code>tril(A)</code>.
+We require a lower triagonal matrix.</p>
+<pre><code class="language-matlab">% Cleaning and choosing the number format
+format short e
+clear all
+close all
+clc
+</code></pre>
+<pre><code class="language-matlab">% Building the matrix and the `Ax=b` system
+n = 18;
+A = 6*eye(n) + diag(-1*ones(n-1,1), 1) + diag(-1*ones(n-1,1), -1);
+b = A*ones(n, 1);
+x = zeros(n,1);
+</code></pre>
+<p>Preparing the <code>C</code> and <code>D</code> matrices used in the iterative method</p>
+<pre><code class="language-matlab">D = tril(A);
+C = A - D;
+</code></pre>
+<pre><code class="language-matlab">for k = 1:5
+    x = D\(b-C*x);
+end
+err = norm(ones(n,1)-x)/norm(ones(n,1))
+</code></pre>
+<h2 id="gauss-seidel-with-residual-vector-check">Gauss-Seidel with residual vector check</h2>
+<pre><code class="language-matlab">% Gauss-Seidel with residual vector check (6-23)
 
+n = 20;
+A = 5*eye(n) + diag(-1*ones(n-1, 1), -1) + diag(-7*ones(n-2, 1), 2);
+b = A*ones(n, 1);
+x = zeros(n, 1);
+% Preparing the iteration matrix
+D = tril(A);
+C = A - D;
+% Starting Flag set to false
+flag = false;
+% the starting point of the residual vector
+r = b-A*x;
+iterata = 0;
 
+while ~flag
+    % Gauss-Seidel Method
+    x = D\(b-C*x); 
+    r = b-A*x;
+    if norm(r, 2) &lt; 10^-3
+        flag = true;
+    end
+    iterata = iterata + 1;
+end
+</code></pre>
 
 
 
